@@ -1,10 +1,12 @@
 {
-  "Espen Evertsen": {
-    "bio": "Clown",
-    "twitter": ""
-  },
-  "Nichlas W. Andersen": {
-    "bio": "Designer",
-    "twitter": ""
+  "authors": {
+    "Espen Evertsen": {
+      "bio": "Clown",
+      "twitter": ""
+    },
+    "Nichlas W. Andersen": {
+      "bio": "Designer",
+      "twitter": ""
+    }
   }
 }
