@@ -19,3 +19,5 @@ fields:
 - type: text
   name: twitter
   label: Twitter
+pages:
+- data/authors/nichlas-w-andersen.json
