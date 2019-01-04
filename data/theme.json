@@ -1,8 +1,8 @@
 {
   "logo": "/uploads/nwa.svg",
-  "footer": "Copyright &amp; 2019",
+  "footer": "Copyright &copy; 2019",
   "dark mode": false,
-  "dark_mode": true,
+  "dark_mode": false,
   "site_name": "Nichlas W. Andersen",
   "site_description": "Creative technologist"
 }
