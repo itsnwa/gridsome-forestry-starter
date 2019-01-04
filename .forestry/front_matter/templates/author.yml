@@ -20,4 +20,5 @@ fields:
   name: twitter
   label: Twitter
 pages:
+- data/authors/espen-evertsen.json
 - data/authors/nichlas-w-andersen.json
