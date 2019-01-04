@@ -19,3 +19,12 @@ fields:
   label: Date
   config:
     required: true
+- type: select
+  name: author
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - Nichlas W. Andersen
+  label: Author
