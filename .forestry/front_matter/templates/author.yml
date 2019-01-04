@@ -4,8 +4,8 @@ hide_body: true
 is_partial: false
 fields:
 - type: text
-  label: Name
-  name: name
+  label: title
+  name: title
   config:
     required: true
 - type: textarea
