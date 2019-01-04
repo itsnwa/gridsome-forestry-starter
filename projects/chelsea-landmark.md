@@ -6,3 +6,6 @@ category: Identity
 thumbnail: ''
 
 ---
+# This is the content
+
+What do you guys think about this implementation of Gridsome and Forestry CMS?
