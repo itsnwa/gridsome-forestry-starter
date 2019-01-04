@@ -26,6 +26,8 @@ sections:
   create: documents
   match: "**/*.json"
   new_doc_ext: json
+  templates:
+  - author
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
