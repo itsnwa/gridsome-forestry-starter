@@ -18,14 +18,14 @@ fields:
   config:
     wysiwyg: true
     schema:
-      format: html-blocks
+      format: html
 - type: textarea
   name: hero_subtitle
   label: Hero subtitle
   config:
     wysiwyg: true
     schema:
-      format: html-blocks
+      format: html
 - name: footer
   label: Footer text
   type: text
