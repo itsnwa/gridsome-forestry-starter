@@ -9,7 +9,7 @@
         Read more
       </g-link>
     </div>
-    <p>{{ settings.footer }}</p>
+    <p v-html="settings.footer" />
   </Layout>
 </template>
 
