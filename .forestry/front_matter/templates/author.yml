@@ -3,25 +3,20 @@ label: Author
 hide_body: true
 is_partial: false
 fields:
-- name: authors
-  label: Authors
-  type: field_group_list
-  fields:
-  - name: name
-    label: Name
-    type: text
-    hidden: false
-    default: ''
-  - type: textarea
-    name: bio
-    label: Bio
-    config:
-      required: true
-  - type: text
-    name: twitter
-    label: Twitter
-  - type: file
-    name: avatar
-    label: Avatar
-  hidden: false
-  default: ''
+- type: text
+  name: name
+  label: Name
+  config:
+    required: true
+- type: textarea
+  name: bio
+  label: Bio
+  config:
+    required: true
+- type: file
+  name: avatar
+  label: Avatar
+- type: text
+  name: twitter
+  label: Twitter
+  description: https://twitter.com/nichlaswa
