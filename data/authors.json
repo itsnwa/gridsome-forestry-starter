@@ -1,10 +1,8 @@
-{
-  "authors": [
-    {
-      "bio": "Art Director / Front-end developer",
-      "name": "Nichlas W. Andersen",
-      "avatar": "",
-      "twitter": "https://twitter.com/nichlaswa"
-    }
-  ]
-}
+[
+  {
+    "bio": "Art Director / Front-end developer",
+    "name": "Nichlas W. Andersen",
+    "avatar": "",
+    "twitter": "https://twitter.com/nichlaswa"
+  }
+]
