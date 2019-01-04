@@ -28,7 +28,7 @@ sections:
   - author
 - type: document
   path: data/theme.json
-  label: Theme configuration
+  label: Theme config
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
