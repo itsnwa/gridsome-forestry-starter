@@ -1,0 +1,21 @@
+---
+label: Author
+hide_body: true
+is_partial: false
+fields:
+- type: text
+  label: Name
+  name: name
+  config:
+    required: true
+- type: textarea
+  name: bio
+  label: Bio
+  config:
+    required: true
+- type: file
+  name: avatar
+  label: Avatar
+- type: text
+  name: twitter
+  label: Twitter
