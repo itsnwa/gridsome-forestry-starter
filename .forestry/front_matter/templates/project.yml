@@ -22,15 +22,8 @@ fields:
   label: Year
   config:
     required: true
-- type: select
-  name: category
-  config:
-    source:
-      type: simple
-    options:
-    - Web
-    - UI/UX
-    - Identity
-  label: Category
+- type: tag_list
+  name: categories
+  label: Categories
 pages:
 - projects/chelsea-landmark.md
