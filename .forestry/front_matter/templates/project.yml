@@ -1,0 +1,34 @@
+---
+label: Project
+hide_body: false
+is_partial: false
+fields:
+- type: file
+  name: thumbnail
+  label: Thumbnail
+  description: This will only show up on the front page
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: Date
+  config:
+    required: true
+- type: text
+  name: year
+  label: Year
+  config:
+    required: true
+- type: select
+  name: category
+  config:
+    source:
+      type: simple
+    options:
+    - Web
+    - UI/UX
+    - Identity
+  label: Category
