@@ -12,6 +12,20 @@ fields:
 - type: file
   name: logo
   label: Logo
+- type: textarea
+  name: hero_title
+  label: Hero title
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
+- type: textarea
+  name: hero_subtitle
+  label: Hero subtitle
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
 - name: footer
   label: Footer text
   type: text
