@@ -27,5 +27,4 @@ fields:
       section: authors
       file: data/authors.json
     required: true
-    options: []
   label: Author
