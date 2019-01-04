@@ -1,5 +1,5 @@
 ---
-date: 2019-01-04T00:00:00+01:00
+date: 2019-01-03 23:00:00 +0000
 year: 2019
 title: Chelsea Landmark
 category: Identity
@@ -13,3 +13,5 @@ categories:
 # This is the content
 
 What do you guys think about this implementation of Gridsome and Forestry CMS?
+
+![](/uploads/ipadpro-homescreen.jpg)
