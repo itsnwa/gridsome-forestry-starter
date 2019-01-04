@@ -25,5 +25,3 @@ fields:
     label: Avatar
   hidden: false
   default: ''
-pages:
-- data/authors.json
