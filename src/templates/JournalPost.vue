@@ -1,4 +1,5 @@
 <template>
+  <Layout>
     <div class="journal">
         <g-link to="/journal">
           Back
@@ -8,6 +9,7 @@
         <p>{{ $page.post.timeToRead }} min read</p>
         <div v-html="$page.post.content"/>
     </div>
+  </Layout>
 </template>
 
 <page-query>

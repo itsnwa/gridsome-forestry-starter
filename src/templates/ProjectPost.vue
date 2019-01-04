@@ -1,4 +1,5 @@
 <template>
+  <Layout>
     <div class="project">
         <g-link to="/">
           Back
@@ -6,9 +7,9 @@
         <h1 v-html="$page.post.title"/>
         <div v-html="$page.post.date"/>
         <p>{{ $page.post.categories }}</p>
-        <hr>
         <div v-html="$page.post.content"/>
     </div>
+  </Layout>
 </template>
 
 <page-query>

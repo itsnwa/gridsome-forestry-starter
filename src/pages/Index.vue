@@ -1,6 +1,5 @@
 <template>
   <Layout>
-    <img :src="settings.logo" :alt="settings.site_name" />
     <h1>Projects</h1>
     <div v-for="item in $page.posts.edges" :key="item.node.id">
       <h1>{{ item.node.title }}</h1>
