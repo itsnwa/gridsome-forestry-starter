@@ -18,9 +18,6 @@ sections:
   match: "**/*.md"
   templates:
   - journal
-- type: document
-  path: data/authors.json
-  label: Authors
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
