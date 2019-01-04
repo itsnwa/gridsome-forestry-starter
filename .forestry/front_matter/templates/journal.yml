@@ -1,0 +1,30 @@
+---
+label: Journal
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: textarea
+  name: excerpt
+  label: Excerpt
+  description: Short snippet that will show outside of the actual post
+  config:
+    required: true
+- type: datetime
+  name: date
+  label: Date
+  config:
+    required: true
+- type: select
+  name: author
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - Nichlas W. Andersen
+  label: Author
