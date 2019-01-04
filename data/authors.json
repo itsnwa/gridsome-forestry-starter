@@ -1,22 +1,10 @@
 {
-  "author": [
-    {
-      "bio": "Surfer",
-      "name": "Espen Evertsen",
-      "twitter": ""
-    },
-    {
-      "bio": "Art Director / Front-end Developer",
-      "name": "Nichlas W. Andersen",
-      "twitter": "https://twitter.com/nichlaswa"
-    }
-  ],
-  "authors": [
-    {
-      "bio": "Art Director / Front-end developer",
-      "name": "Nichlas W. Andersen",
-      "avatar": "",
-      "twitter": "https://twitter.com/nichlaswa"
-    }
-  ]
+  "Espen Evertsen": {
+    "bio": "Clown",
+    "twitter": ""
+  },
+  "Nichlas W. Andersen": {
+    "bio": "Designer",
+    "twitter": ""
+  }
 }
