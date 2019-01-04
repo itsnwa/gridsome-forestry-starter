@@ -4,8 +4,8 @@
           Back
         </g-link>
         <h1 v-html="$page.post.title"/>
-        <div v-html="$page.post.year"/>
-        <p>{{ $page.post.category }}</p>
+        <div v-html="$page.post.date"/>
+        <p>{{ $page.post.categories }}</p>
         <hr>
         <div v-html="$page.post.content"/>
     </div>
@@ -15,10 +15,9 @@
 query ProjectPost ($path: String!) {
   post: projectPost (path: $path) {
     title
-    date (format: "D. MMMM YYYY")
+    date (format: "YYYY")
     content
-    year
-    category
+    categories
   }
 }
 </page-query>
@@ -32,7 +31,3 @@ export default {
   }
 }
 </script>
-
-<style>
-
-</style>
