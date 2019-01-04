@@ -1,26 +1,27 @@
 ---
 label: Author
-hide_body: 
-is_partial: 
+hide_body: true
+is_partial: false
 fields:
 - name: authors
   label: Authors
   type: field_group_list
   fields:
-  - name: bio
-    label: Bio
-    type: text
-    hidden: false
-    default: ''
   - name: name
     label: Name
     type: text
     hidden: false
     default: ''
-  - name: avatar
+  - type: textarea
+    name: bio
+    label: Bio
+    config:
+      required: true
+  - type: text
+    name: twitter
+    label: Twitter
+  - type: file
+    name: avatar
     label: Avatar
-    type: text
-    hidden: false
-    default: ''
   hidden: false
   default: ''
