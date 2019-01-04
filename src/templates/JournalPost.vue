@@ -1,8 +1,11 @@
 <template>
     <div class="journal">
+        <g-link to="/journal">
+          Back
+        </g-link>
         <h1 v-html="$page.post.title"/>
         <div v-html="$page.post.date"/>
-        <p>{{ $page.post.timeToRead }}</p>
+        <p>{{ $page.post.timeToRead }} min read</p>
         <div v-html="$page.post.content"/>
     </div>
 </template>
