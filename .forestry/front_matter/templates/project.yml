@@ -17,11 +17,6 @@ fields:
   label: Date
   config:
     required: true
-- type: text
-  name: year
-  label: Year
-  config:
-    required: true
 - type: tag_list
   name: categories
   label: Categories
