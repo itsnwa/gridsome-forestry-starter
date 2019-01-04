@@ -1,6 +1,8 @@
 <template>
     <footer class="footer">
-        <p v-html="settings.footer" />
+        <div class="container">
+            <p v-html="settings.footer" />
+        </div>
     </footer>
 </template>
 

@@ -1,14 +1,24 @@
 <template>
     <header class="header">
-        <div class="left">
-            <g-link :to="{ name: 'home' }">
-                <img :src="settings.logo" :alt="settings.site_name" class="logo" />
-            </g-link>
+        <div class="container">
+            <div class="left">
+                <g-link :to="{ name: 'home' }" class="home-link">
+                    <img 
+                        :src="settings.logo"
+                        :alt="settings.site_name" 
+                        class="logo"
+                        v-if="settings.logo"
+                    />
+                    <span class="site-name" v-else>
+                        {{ settings.site_name }}
+                    </span>
+                </g-link>
+            </div>
+            <nav class="nav right">
+                <g-link class="nav__link" :to="{ name: 'journal' }">Journal</g-link>
+                <g-link class="nav__link" :to="{ name: 'about' }">Say Hi!</g-link>
+            </nav>
         </div>
-        <nav class="nav right">
-            <g-link class="nav__link" :to="{ name: 'journal' }">Journal</g-link>
-            <g-link class="nav__link" :to="{ name: 'about' }">Say Hi!</g-link>
-        </nav>
     </header>
 </template>
 
@@ -24,18 +34,37 @@ export default {
 
 <style scoped>
 .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 6rem;
+}
+.header > .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
+    height: 100%;
+}
+.home-link {
+    text-decoration: none;
 }
 .logo {
-    height: 2rem;
+    height: 1.5rem;
+}
+.site-name {
+    font-size: 0.9rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    text-transform: uppercase;   
 }
 .nav > * {
+    font-size: 0.9rem;
+    font-weight: 600;
     text-decoration: none;
     margin-top: 4px;
-    margin-right: 1rem;
+    margin-right: 3rem;
     padding-bottom: 4px;
     border-bottom: 1px solid;
     border-color: transparent;
