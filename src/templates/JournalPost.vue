@@ -2,6 +2,7 @@
     <div class="journal">
         <h1 v-html="$page.post.title"/>
         <div v-html="$page.post.date"/>
+        <p>{{ $page.post.timeToRead }}</p>
         <div v-html="$page.post.content"/>
     </div>
 </template>
@@ -12,6 +13,7 @@ query JournalPost ($path: String!) {
     title
     author
     date (format: "D. MMMM YYYY")
+    timeToRead
     content
   }
 }

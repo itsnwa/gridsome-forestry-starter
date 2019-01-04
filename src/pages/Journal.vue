@@ -5,6 +5,9 @@
       <h1>{{ item.node.title }}</h1>
       <p>{{ item.node.date }}</p>
       <p>{{ item.node.excerpt }}</p>
+      <g-link :to="item.node.path">
+        Read more
+      </g-link>
     </div> 
   </Layout>
 </template>
@@ -15,6 +18,7 @@ query Journal {
     edges {
       node {
         id
+        path
         date (format: "D. MMMM YYYY")
         title
         excerpt

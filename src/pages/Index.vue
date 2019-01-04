@@ -3,9 +3,12 @@
     <h1>Projects</h1>
     <div v-for="item in $page.posts.edges" :key="item.node.id">
       <h1>{{ item.node.title }}</h1>
-      <p>{{ item.node.date }}</p>
-      <p>{{ item.node.excerpt }}</p>
-    </div> 
+      <g-image :src="item.node.thumbnail" :alt="item.node.title + 'thumbnail'" />
+      <p>{{ item.node.category }}</p>
+      <g-link :to="item.node.path">
+        Read more
+      </g-link>
+    </div>
   </Layout>
 </template>
 
@@ -17,7 +20,9 @@ query Posts {
         id
         date (format: "D. MMMM YYYY")
         title
-        excerpt
+        category
+        thumbnail
+        path
       }
     }
   }

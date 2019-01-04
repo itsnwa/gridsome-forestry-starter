@@ -1,7 +1,12 @@
 <template>
     <div class="project">
+        <g-link to="/">
+          Back
+        </g-link>
         <h1 v-html="$page.post.title"/>
-        <div v-html="$page.post.date"/>
+        <div v-html="$page.post.year"/>
+        <p>{{ $page.post.category }}</p>
+        <hr>
         <div v-html="$page.post.content"/>
     </div>
 </template>
@@ -12,6 +17,8 @@ query ProjectPost ($path: String!) {
     title
     date (format: "D. MMMM YYYY")
     content
+    year
+    category
   }
 }
 </page-query>
