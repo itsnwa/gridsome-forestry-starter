@@ -16,6 +16,8 @@ sections:
   label: Journal
   create: documents
   match: "**/*.md"
+  templates:
+  - journal
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
