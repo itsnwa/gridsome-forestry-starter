@@ -23,8 +23,9 @@ fields:
   name: author
   config:
     source:
-      type: simple
+      type: documents
+      section: authors
+      file: data/authors.json
     required: true
-    options:
-    - Nichlas W. Andersen
+    options: []
   label: Author
