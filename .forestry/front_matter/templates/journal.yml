@@ -29,3 +29,5 @@ fields:
     required: true
   label: Author
   default: data/authors/nichlas-w-andersen.json
+pages:
+- journal/macos-development-environment.md
