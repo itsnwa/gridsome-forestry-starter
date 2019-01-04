@@ -23,8 +23,9 @@ fields:
   name: author
   config:
     source:
-      type: documents
+      type: pages
       section: authors
-      file: data/authors.json
+      file: data/authors/nichlas-w-andersen.json
     required: true
   label: Author
+  default: data/authors/nichlas-w-andersen.json
