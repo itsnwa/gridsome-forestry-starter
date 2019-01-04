@@ -1,15 +1,15 @@
 <template>
   <Layout>
-    <h1>Projects</h1>
-    <div v-for="item in $page.posts.edges" :key="item.node.id">
-      <h1>{{ item.node.title }}</h1>
-      <g-image :src="item.node.thumbnail" :alt="item.node.title + 'thumbnail'" />
-      <p>{{ item.node.category }}</p>
-      <g-link :to="item.node.path">
-        Read more
-      </g-link>
+    <div class="projects">
+      <div v-for="item in $page.posts.edges" :key="item.node.id" class="project">
+        <h2>{{ item.node.title }}</h2>
+        <g-image :src="item.node.thumbnail" :alt="item.node.title + 'thumbnail'" />
+        <p>{{ item.node.categories }}</p>
+        <g-link :to="item.node.path">
+          Read more
+        </g-link>
+      </div>
     </div>
-    <p v-html="settings.footer" />
   </Layout>
 </template>
 
@@ -21,7 +21,7 @@ query Posts {
         id
         date (format: "D. MMMM YYYY")
         title
-        category
+        categories
         thumbnail
         path
       }
