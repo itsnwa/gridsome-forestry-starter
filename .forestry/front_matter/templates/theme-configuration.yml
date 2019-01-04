@@ -3,6 +3,12 @@ label: Theme configuration
 hide_body: true
 is_partial: false
 fields:
+- type: text
+  name: site_name
+  label: Site name
+- type: textarea
+  name: site_description
+  label: Site description
 - type: file
   name: logo
   label: Logo
