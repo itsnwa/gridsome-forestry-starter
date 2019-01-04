@@ -1,0 +1,15 @@
+---
+label: Theme configuration
+hide_body: 
+is_partial: 
+fields:
+- name: logo
+  label: Logo
+  type: text
+  hidden: false
+  default: ''
+- name: footer
+  label: Footer
+  type: text
+  hidden: false
+  default: ''

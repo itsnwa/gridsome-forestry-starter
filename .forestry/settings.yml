@@ -29,7 +29,6 @@ sections:
 - type: document
   path: data/theme.json
   label: Theme configuration
-  match: "**/*"
 upload_dir: uploads
 public_path: "/uploads"
 front_matter_path: ''
