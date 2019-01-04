@@ -32,3 +32,5 @@ fields:
     - UI/UX
     - Identity
   label: Category
+pages:
+- projects/chelsea-landmark.md
