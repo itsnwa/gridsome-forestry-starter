@@ -13,3 +13,5 @@ project_fg_color: ''
 
 ---
 What do you guys think about this implementation of Gridsome and Forestry CMS?
+
+![](/static/uploads/Screenshot 2019-01-05 at 17.37.35.png)![](/static/uploads/cl-floorplan-1.jpg)
