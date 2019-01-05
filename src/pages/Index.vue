@@ -6,9 +6,14 @@
 
         <div class="project" v-for="item in $page.posts.edges" :key="item.node.id">
           <g-link :to="item.node.path" class="project-link">
-            <div
+            <g-image
+              :src="item.node.thumbnail"
+              :alt="item.node.title"
               class="thumbnail"
-              :style="{ backgroundImage: `url(${item.node.thumbnail.src})` }"
+              height="100"
+              width="100"
+              fit="cover"
+              blur="40"
             />
             <h3 class="project-title">{{ item.node.title }}</h3>
             <div class="categories">
@@ -66,12 +71,6 @@ export default {
 }
 .project:nth-child(3n) {
   grid-column: auto / span 2;
-}
-.thumbnail {
-  height: 560px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 .project-link {
   text-decoration: none;

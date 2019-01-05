@@ -9,7 +9,7 @@
 
 ```bash
 # install Gridsome locally
-npm i -g gridsome
+npm install --global @gridsome/cli
 
 # cd into the project directory
 cd gridsome-forestry-starter
