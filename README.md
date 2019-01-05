@@ -36,6 +36,6 @@ Import your site in Netlify
 
 1. Create a new site in Netlify and import your repository.
 2. Set the build command to: `gridsome build`
-3. Set the publish directory to `dist`
+3. Set the publish directory to: `dist`
 
-That's it, now your site gets deployed automatically on `git push`
+That's it, now your site gets deployed automatically on `git push` or when saving documents from Forestry.
