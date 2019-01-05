@@ -8,12 +8,10 @@ categories:
 - identity
 - print
 - signage
-project_bg_color: 
-project_fg_color: 
+project_bg_color: ''
+project_fg_color: ''
 
 ---
-# This is the content
-
 What do you guys think about this implementation of Gridsome and Forestry CMS?
 
-![](/uploads/ipadpro-homescreen.jpg)
+![](/static/uploads/Screenshot 2019-01-05 at 17.37.35.png)![](/static/uploads/cl-floorplan-1.jpg)
