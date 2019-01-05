@@ -4,22 +4,24 @@
       <Hero />
       <div class="projects">
 
-        <div class="project" v-for="item in $page.posts.edges" :key="item.node.id">
+        <div class="project" v-for="item in $page.projects.edges" :key="item.node.id">
           <g-link :to="item.node.path" class="project-link">
             <g-image
               :src="item.node.thumbnail"
               :alt="item.node.title"
               class="thumbnail"
-              height="100"
               width="100"
-              fit="cover"
-              blur="40"
+              height="100"
             />
             <h3 class="project-title">{{ item.node.title }}</h3>
             <div class="categories">
               <span class="category" v-for="(item, index) in item.node.categories" :key="index">{{ item }}</span>
             </div>
           </g-link>
+        </div>
+
+        <div class="latest-journals">
+          4 latest journals will show up here...
         </div>
 
       </div>
@@ -29,15 +31,22 @@
 
 <page-query>
 query Posts {
-	posts: allProjectPost {
+	projects: allProjectPost {
     edges {
       node {
         id
         date (format: "D. MMMM YYYY")
         title
         categories
-        thumbnail
+        thumbnail (width: 100, height: 100, quality: 90)
         path
+      }
+    }
+  },
+  journals: allJournalPost {
+    edges {
+      node {
+        title
       }
     }
   }

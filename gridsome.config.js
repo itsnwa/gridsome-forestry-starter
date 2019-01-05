@@ -12,9 +12,10 @@ module.exports = {
       options: {
         path: "projects/**/*.md",
         typeName: "ProjectPost",
+        resolveAbsolutePaths: true,
         remark: {
-          externalLinksTarget: '_blank',
-          externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
           plugins: ["@gridsome/remark-prismjs"]
         }
       }
@@ -24,9 +25,10 @@ module.exports = {
       options: {
         path: "journal/**/*.md",
         typeName: "JournalPost",
+        resolveAbsolutePaths: true,
         remark: {
-          externalLinksTarget: '_blank',
-          externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
+          externalLinksTarget: "_blank",
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
           plugins: ["@gridsome/remark-prismjs"]
         }
       }
