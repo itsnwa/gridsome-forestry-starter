@@ -62,4 +62,11 @@ export default {
 .category:last-of-type {
   margin: 0;
 }
+
+.project:hover .thumbnail {
+  outline-width: 1px;
+  outline-color: var(--color-base);
+  outline-offset: -1rem;
+  outline-style: solid;
+}
 </style>
