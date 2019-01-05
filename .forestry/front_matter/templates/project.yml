@@ -20,6 +20,16 @@ fields:
 - type: tag_list
   name: categories
   label: Categories
+- type: color
+  name: project_bg_color
+  config:
+    color_format: Hex
+  label: Background color
+- type: color
+  name: project_fg_color
+  config:
+    color_format: Hex
+  label: Foreground color
 pages:
 - projects/chelsea-landmark.md
 - projects/ios-concept.md
