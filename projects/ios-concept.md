@@ -1,5 +1,5 @@
 ---
-thumbnail: "../uploads/ipadpro-homescreen.jpg"
+thumbnail: "../static/uploads/ipadpro-homescreen.jpg"
 title: iOS concept
 date: 2019-01-03 23:00:00 +0000
 categories:

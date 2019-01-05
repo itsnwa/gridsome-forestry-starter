@@ -20,11 +20,19 @@
 
       </div>
 
-      <div class="latest-journals">
-          4 latest journals will show up here...
-      </div>
-
     </div>
+
+    <div class="latest-journals-heading container">
+      <h3>Latest and greatest</h3>
+    </div>
+    <div class="latest-journals">
+      <div class="container">
+        <g-link :to="item.node.path" class="journal" v-for="item in $page.journals.edges" :key="item.node.id">
+          <h3 class="journal-title">{{ item.node.title }}</h3>
+        </g-link>
+      </div>
+    </div>
+
   </Layout>
 </template>
 
@@ -42,9 +50,11 @@ query Posts {
       }
     }
   },
-  journals: allJournalPost {
+  journals: allJournalPost (perPage: 4) {
     edges {
       node {
+        id
+        path
         title
       }
     }
@@ -100,5 +110,34 @@ export default {
 }
 .category:last-of-type {
   margin: 0;
+}
+
+.latest-journals-heading {
+  margin-top: 6rem;
+  margin-bottom: 1rem;
+  font-size: 0.6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.latest-journals {
+  border-top: 1px solid #f3f3f3;
+  border-bottom: 1px solid #f3f3f3;
+}
+.latest-journals > .container {
+  display: flex;
+}
+.journal {
+  flex: 1;
+  display: block;
+  padding: 2rem;
+  border-right: 1px solid #f3f3f3;
+  transition: background 0.25s ease;
+  text-decoration: none;
+}
+.journal:last-of-type {
+  border: 0;
+}
+.journal:hover {
+  background: #f7f7f7;
 }
 </style>
