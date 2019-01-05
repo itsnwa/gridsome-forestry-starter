@@ -2,18 +2,21 @@
   <Layout>
     <div class="project">
 
-      <div class="journal-container">
-        <h1 class="project-title" v-html="$page.post.title" />
-        <div class="project-info">
-          <div class="categories">
-            <span 
-              class="category"
-              v-for="(category, index) in $page.post.categories" 
-              :key="index"
-              v-text="category"
-            />
+      <div class="container">
+
+        <div class="project-header">
+          <h1 class="project-title" v-html="$page.post.title" />
+          <div class="project-info">
+            <div class="categories">
+              <span 
+                class="category"
+                v-for="(category, index) in $page.post.categories" 
+                :key="index"
+                v-text="category"
+              />
+            </div>
+            <div v-html="$page.post.date"/>
           </div>
-          <div v-html="$page.post.date"/>
         </div>
 
         <div v-html="$page.post.content" class="content" />
@@ -51,14 +54,12 @@ export default {
 </script>
 
 <style scoped>
+.project-header {
+  padding: 30vh 0 6rem 0;
+}
 .project-title {
   font-size: 4rem;
   margin: 0;
   padding: 0;
-}
-.journal-container {
-  width: 600px;
-  margin: 0 auto;
-  padding: 6rem 2rem 6rem 2rem;
 }
 </style>
