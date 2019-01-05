@@ -17,7 +17,7 @@
 export default {
     props: {
         journals: {
-            type: Object,
+            type: Array,
             required: true
         }
     }
@@ -33,8 +33,8 @@ export default {
   text-transform: uppercase;
 }
 .latest-journals {
-  border-top: 1px solid #f3f3f3;
-  border-bottom: 1px solid #f3f3f3;
+  border-top: 1px solid var(--color-base-1);
+  border-bottom: 1px solid var(--color-base-1);
 }
 .latest-journals > .container {
   display: flex;
@@ -43,7 +43,7 @@ export default {
   flex: 1;
   display: block;
   padding: 2rem;
-  border-right: 1px solid #f3f3f3;
+  border-right: 1px solid var(--color-base-1);
   transition: background 0.25s ease;
   text-decoration: none;
 }
@@ -51,6 +51,6 @@ export default {
   border: 0;
 }
 .journal:hover {
-  background: #f7f7f7;
+  background: var(--color-base-1);
 }
 </style>

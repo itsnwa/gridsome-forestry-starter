@@ -20,7 +20,7 @@
 export default {
     props: {
         projects: {
-            type: Object,
+            type: Array,
             required: true
         }
     }
@@ -49,11 +49,12 @@ export default {
 }
 .project-title {
   font-size: 1rem;
+  color: var(--color-contrast);
   margin: 2rem 0 1rem 0;
 }
 .categories {
   font-size: 0.8rem;
-  opacity: 0.6;
+  color: var(--color-contrast-1);
 }
 .category {
   margin-right: 0.8rem;
