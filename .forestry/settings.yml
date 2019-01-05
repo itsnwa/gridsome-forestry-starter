@@ -29,10 +29,10 @@ sections:
 - type: document
   path: data/theme.json
   label: Theme config
-upload_dir: static/uploads
+upload_dir: uploads
 public_path: "/uploads"
-front_matter_path: ''
-use_front_matter_path: false
+front_matter_path: "../../uploads"
+use_front_matter_path: true
 file_template: ":filename:"
 build:
   publish_command: gridsome build
