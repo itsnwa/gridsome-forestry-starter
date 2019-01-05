@@ -25,10 +25,10 @@ export default {
 }
 
 body {
-  --color-base: #fff;
-  --color-base-1: #f3f3f3;
-  --color-contrast: #000;
-  --color-contrast-1: #2b2b2b;
+  --color-base: rgb(255, 255, 255);
+  --color-base-1: rgb(243, 243, 243);
+  --color-contrast: rgb(0, 0, 0);
+  --color-contrast-1: rgb(43, 43, 43);
   font-family: -apple-system,system-ui,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
   margin:0;
   padding:6rem 0 0 0;
@@ -38,10 +38,10 @@ body {
 }
 
 body.dark {
-  --color-base: #000;
-  --color-base-1: #2b2b2b;
-  --color-contrast: #fff;
-  --color-contrast-1: #f3f3f3;
+  --color-base: rgb(0, 0, 0);
+  --color-base-1: rgb(43, 43, 43);
+  --color-contrast: rgb(255, 255, 255);
+  --color-contrast-1: rgb(243, 243, 243);
 }
 
 .container {
