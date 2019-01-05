@@ -29,8 +29,8 @@ sections:
 - type: document
   path: data/theme.json
   label: Theme config
-upload_dir: uploads
-public_path: "/uploads"
+upload_dir: static/uploads
+public_path: "/static/uploads"
 front_matter_path: "../static/uploads"
 use_front_matter_path: true
 file_template: ":filename:"
