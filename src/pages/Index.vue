@@ -10,8 +10,6 @@
               :src="item.node.thumbnail"
               :alt="item.node.title"
               class="thumbnail"
-              width="100"
-              height="100"
             />
             <h3 class="project-title">{{ item.node.title }}</h3>
             <div class="categories">
@@ -20,11 +18,12 @@
           </g-link>
         </div>
 
-        <div class="latest-journals">
-          4 latest journals will show up here...
-        </div>
-
       </div>
+
+      <div class="latest-journals">
+          4 latest journals will show up here...
+      </div>
+
     </div>
   </Layout>
 </template>
@@ -38,7 +37,7 @@ query Posts {
         date (format: "D. MMMM YYYY")
         title
         categories
-        thumbnail (width: 100, height: 100, quality: 90)
+        thumbnail (quality: 90)
         path
       }
     }
@@ -78,11 +77,15 @@ export default {
   grid-column: auto / span 1;
   text-align: center;
 }
-.project:nth-child(3n) {
+.project:nth-child(3n+1) {
   grid-column: auto / span 2;
 }
 .project-link {
   text-decoration: none;
+}
+.thumbnail {
+  height: 560px;
+  object-fit: cover;
 }
 .project-title {
   font-size: 1rem;
