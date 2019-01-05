@@ -8,7 +8,8 @@ categories:
 - identity
 - print
 - signage
-
+project_bg_color: "#000"
+project_fg_color: "#fff"
 ---
 # This is the content
 

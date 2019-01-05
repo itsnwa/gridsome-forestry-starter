@@ -46,6 +46,8 @@ export default {
 .thumbnail {
   height: 560px;
   object-fit: cover;
+  transition: all 0.15s ease;
+  box-shadow: 0 0 40px -20px rgba(0,0,0,0.25);
 }
 .project-title {
   font-size: 1rem;
@@ -64,9 +66,7 @@ export default {
 }
 
 .project:hover .thumbnail {
-  outline-width: 1px;
-  outline-color: var(--color-base);
-  outline-offset: -1rem;
-  outline-style: solid;
+  transform: scale(1.02);
+  box-shadow: 0 20px 40px -20px rgba(0,0,0,0.25);
 }
 </style>

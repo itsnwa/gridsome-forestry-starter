@@ -1,5 +1,5 @@
 <template>
-    <header class="header">
+    <header class="header" :class="{sticky: $route.path === '/' || '/projects/:id'}">
         <div class="container">
             <div class="left">
                 <g-link :to="{ name: 'home' }" class="home-link">
@@ -34,11 +34,14 @@ export default {
 
 <style scoped>
 .header {
+    position: relative;
+    height: 6rem;
+}
+.header.sticky {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 6rem;
 }
 .header > .container {
     display: flex;
