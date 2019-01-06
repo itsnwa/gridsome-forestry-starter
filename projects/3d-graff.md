@@ -8,4 +8,4 @@ project_bg_color: "#B4C1C4"
 project_fg_color: "#fff"
 
 ---
-Project content
+![](/static/uploads/graff.jpg)
