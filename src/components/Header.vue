@@ -4,14 +4,10 @@
             <div class="left">
                 <g-link :to="{ name: 'home' }" class="home-link">
                     <img 
-                        :src="settings.logo"
+                        src="../../static/logo.svg"
                         :alt="settings.site_name" 
                         class="logo"
-                        v-if="settings.logo"
                     />
-                    <span class="site-name" v-else>
-                        {{ settings.site_name }}
-                    </span>
                 </g-link>
             </div>
             <nav class="nav right">
@@ -26,7 +22,8 @@
 export default {
   data() {
     return {
-      settings: require("../../data/theme.json")
+        logo: require("../../static/logo.svg"),
+        settings: require("../../data/theme.json")
     }
   }
 }
