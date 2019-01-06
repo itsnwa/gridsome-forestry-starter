@@ -18,14 +18,6 @@ sections:
   match: "**/*.md"
   templates:
   - journal
-- type: directory
-  path: data/authors
-  label: Authors
-  create: documents
-  match: "**/*.json"
-  new_doc_ext: json
-  templates:
-  - author
 - type: document
   path: data/theme.json
   label: Theme config
