@@ -9,4 +9,4 @@ project_bg_color: "#D5DCD0"
 project_fg_color: "#464842"
 
 ---
-A project made just for fun.
+![](/static/uploads/ipadpro-homescreen.jpg)
