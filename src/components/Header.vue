@@ -78,9 +78,9 @@ export default {
     margin: 0;
 }
 .nav > *:hover {
-    border-color: black;
+    border-color: inherit;
 }
 .nav > .active {
-    border-color: black;
+    border-color: inherit;
 }
 </style>
