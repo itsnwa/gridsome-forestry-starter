@@ -7,15 +7,23 @@
         <div class="project-header">
           <h1 class="project-title" v-html="$page.post.title" />
           <div class="project-info">
-            <div class="categories">
-              <span 
-                class="category"
-                v-for="(category, index) in $page.post.categories" 
-                :key="index"
-                v-text="category"
-              />
+
+            <div class="categories-container">
+              <div class="categories">
+                <span class="label">Deliverables</span>
+                <span 
+                  class="category"
+                  v-for="(category, index) in $page.post.categories" 
+                  :key="index"
+                  v-text="category"
+                />
+              </div>
             </div>
-            <div v-html="$page.post.date"/>
+
+            <div class="year-container">
+              <span class="label">Year</span>
+              <div v-html="$page.post.date"/>
+            </div>
           </div>
         </div>
 
@@ -55,11 +63,33 @@ export default {
 
 <style scoped>
 .project-header {
-  padding: 30vh 0 6rem 0;
+  padding: 20vh 0 8rem 0;
 }
 .project-title {
   font-size: 4rem;
-  margin: 0;
+  margin: 0 0 4rem 0;
   padding: 0;
+}
+.project-info {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+}
+.project-info > div {
+  margin-right: 4rem;
+}
+.project-info > div:last-of-type {
+  margin: 0;
+}
+.category:after {
+  content: ', '
+}
+.category:last-of-type:after {
+  content: '';
+}
+.label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
 }
 </style>
