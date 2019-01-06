@@ -33,24 +33,79 @@ export default {
   text-transform: uppercase;
 }
 .latest-journals {
-  border-top: 1px solid var(--color-base-1);
-  border-bottom: 1px solid var(--color-base-1);
+  max-width: 100%;
+  margin: 0 2rem;
+  border: 1px solid var(--color-base-1);
 }
 .latest-journals > .container {
   display: flex;
+  flex-wrap: wrap;
+  padding: 0;
 }
 .journal {
-  flex: 1;
+  flex: 0 0 100%;
   display: block;
   padding: 2rem;
-  border-right: 1px solid var(--color-base-1);
   transition: background 0.25s ease;
   text-decoration: none;
+  border-bottom: 1px solid var(--color-base-1);
 }
+
 .journal:last-of-type {
-  border: 0;
+  border-bottom: 0;
 }
+
 .journal:hover {
   background: var(--color-base-1);
 }
+
+@media (min-width: 580px) {
+  .journal {
+    flex: 0 0 50%;
+  }
+  .journal:nth-child(1) {
+    border-right: 1px solid var(--color-base-1);
+    border-bottom: 1px solid var(--color-base-1);
+  }
+
+  .journal:nth-child(2) {
+    border-bottom: 1px solid var(--color-base-1);
+  }
+
+  .journal:nth-child(3) {
+    border-right: 1px solid var(--color-base-1);
+    border-bottom: 0;
+  }
+}
+
+@media (min-width: 920px) {
+  .journal {
+    flex: 0 0 25%;
+  }
+  .journal:nth-child(1) {
+    border: 0;
+    border-right: 1px solid var(--color-base-1);
+  }
+
+  .journal:nth-child(2) {
+    border: 0;
+    border-right: 1px solid var(--color-base-1);
+  }
+
+  .journal:nth-child(3) {
+    border: 0;
+    border-right: 1px solid var(--color-base-1);
+  }
+  .latest-journals {
+    margin: 0;
+    border-left: 0;
+    border-right: 0;
+    border-top: 1px solid var(--color-base-1);
+    border-bottom: 1px solid var(--color-base-1);
+  }
+  .latest-journals > .container {
+    padding: 0 2rem;
+  }
+}
+
 </style>

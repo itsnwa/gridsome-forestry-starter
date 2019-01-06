@@ -34,11 +34,8 @@ export default {
   grid-gap: 4rem;
 }
 .project {
-  grid-column: auto / span 1;
-  text-align: center;
-}
-.project:nth-child(3n+1) {
   grid-column: auto / span 2;
+  text-align: center;
 }
 .project-link {
   text-decoration: none;
@@ -64,9 +61,18 @@ export default {
 .category:last-of-type {
   margin: 0;
 }
-
 .project:hover .thumbnail {
   transform: scale(1.02);
   box-shadow: 0 20px 40px -20px rgba(0,0,0,0.25);
 }
+
+@media (min-width: 920px) {
+  .project {
+    grid-column: auto / span 1;
+  }
+  .project:nth-child(3n+1) {
+    grid-column: auto / span 2;
+  }
+}
+
 </style>
