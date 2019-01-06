@@ -23,11 +23,13 @@ fields:
   name: author
   config:
     source:
-      type: pages
+      type: simple
       section: authors
       file: data/authors/nichlas-w-andersen.json
     required: true
+    options:
+    - Nichlas W. Andersen
   label: Author
-  default: data/authors/nichlas-w-andersen.json
+  default: ''
 pages:
 - journal/macos-development-environment.md
