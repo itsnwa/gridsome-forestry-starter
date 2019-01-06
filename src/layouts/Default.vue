@@ -59,6 +59,12 @@ body.dark {
   padding: 0 2rem;
 }
 
+@media (min-width: 860px) {
+  .container {
+    padding: 0 6rem;
+  }
+}
+
 a {
   color: inherit;
 }
