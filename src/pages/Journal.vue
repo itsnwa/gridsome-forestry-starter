@@ -1,15 +1,26 @@
 <template>
   <Layout>
+
     <div class="container">
-      <div v-for="item in $page.posts.edges" :key="item.node.id">
-        <h1>{{ item.node.title }}</h1>
-        <p>{{ item.node.date }}</p>
-        <p>{{ item.node.excerpt }}</p>
-        <g-link :to="item.node.path">
-          Read more
-        </g-link>
+      <div class="journal-hero">
+        <h1 class="journal-header">
+          A wise man once said...
+        </h1>
       </div>
     </div>
+
+    <g-link 
+      :to="item.node.path"
+      v-for="item in $page.posts.edges" 
+      :key="item.node.id"
+      class="journal-post"
+    >
+      <div class="container">
+        <h2 class="journal-title">{{ item.node.title }}</h2>
+        <p class="journal-excerpt">{{ item.node.excerpt }}</p>
+      </div>
+    </g-link>
+      
   </Layout>
 </template>
 
@@ -20,7 +31,6 @@ query Journal {
       node {
         id
         path
-        date (format: "D. MMMM YYYY")
         title
         excerpt
       }
@@ -35,7 +45,52 @@ export default {
 </script>
 
 <style scoped>
-  .container {
-    padding-top: 6rem;
+.journal-hero {
+  padding: 4rem 0;
+  text-align: center;
+}
+.journal-header {
+  font-size: 3rem;
+  font-weight: 700;
+  padding: 0;
+  margin: 0;
+}
+.journal-post {
+  display: block;
+  padding: 2rem 0;
+  text-decoration: none;
+  transition: background 0.5s ease;
+}
+.journal-post > * {
+  transition: transform 0.5s ease;
+}
+.journal-post:hover {
+  background-color: var(--color-base-1);
+}
+.journal-post:hover > * {
+  transform: translateX(4rem);
+}
+.journal-post h1,
+.journal-post h2 {
+  margin: 0;
+  padding: 0;
+}
+.journal-title {
+  color: var(--color-contrast);
+}
+.journal-excerpt {
+  color: var(--color-contrast-1);
+}
+
+@media (min-width: 560px) {
+  .journal-post {
+    padding: 3rem 0;
   }
+}
+
+@media (min-width: 860px) {
+  .journal-post {
+    padding: 5rem 0;
+  }
+}
 </style>
