@@ -19,13 +19,19 @@ export default {
 p {
     line-height: 1.5;
 }
+pre, code {
+    font-family: Space Mono,SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
+    font-size: 0.8rem;
+    border-radius: 2px;
+}
 pre {
-    padding: 0.5rem 1rem;
-    background: var(--color-base-1);
+    padding: 0.8rem 1rem;
+    background-color: var(--color-base-1);
     color: var(--color-contrast);
 }
 code {
-    background: var(--color-base-1);
+    padding: 0.15em 0.5em;
+    background-color: var(--color-base-1);
     color: var(--color-contrast);
 }
 </style>

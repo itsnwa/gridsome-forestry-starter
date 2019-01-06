@@ -15,8 +15,7 @@ module.exports = {
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
-          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
-          plugins: ["@gridsome/remark-prismjs"]
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
         }
       }
     },
@@ -28,10 +27,14 @@ module.exports = {
         resolveAbsolutePaths: true,
         remark: {
           externalLinksTarget: "_blank",
-          externalLinksRel: ["nofollow", "noopener", "noreferrer"],
-          plugins: ["@gridsome/remark-prismjs"]
+          externalLinksRel: ["nofollow", "noopener", "noreferrer"]
         }
       }
     }
-  ]
+  ],
+  transformers: {
+    remark: {
+      plugins: ["@gridsome/remark-prismjs"]
+    }
+  }
 };
