@@ -10,4 +10,4 @@ project_bg_color: "#333333"
 project_fg_color: "#fff"
 
 ---
-Also made just for fun.
+![](/static/uploads/sunk.gif)
