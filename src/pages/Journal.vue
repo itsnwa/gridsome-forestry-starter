@@ -15,7 +15,7 @@
       :key="item.node.id"
       class="journal-post"
     >
-      <div class="container">
+      <div class="container journal">
         <h2 class="journal-title">{{ item.node.title }}</h2>
         <p class="journal-excerpt">{{ item.node.excerpt }}</p>
       </div>
@@ -45,9 +45,13 @@ export default {
 </script>
 
 <style scoped>
+.container.journal {
+  max-width: 720px;
+}
 .journal-hero {
   padding: 4rem 0;
   text-align: center;
+  color: var(--color-base-1);
 }
 .journal-header {
   font-size: 3rem;
@@ -76,6 +80,7 @@ export default {
   padding: 0;
 }
 .journal-title {
+  font-size: 2rem;
   color: var(--color-contrast);
 }
 .journal-excerpt {
