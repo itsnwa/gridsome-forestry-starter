@@ -9,9 +9,6 @@ fields:
 - type: textarea
   name: site_description
   label: Site description
-- type: file
-  name: logo
-  label: Logo
 - type: textarea
   name: hero_title
   label: Hero title
