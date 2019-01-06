@@ -87,9 +87,4 @@ export default {
 .category:last-of-type:after {
   content: '';
 }
-.label {
-  display: block;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
 </style>
