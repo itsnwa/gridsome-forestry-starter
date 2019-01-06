@@ -35,6 +35,7 @@ body {
   font-size: 16px;
   background: var(--color-base);
   color: var(--color-contrast);
+  transition: background 0.5s ease;
 }
 
 body.dark {
