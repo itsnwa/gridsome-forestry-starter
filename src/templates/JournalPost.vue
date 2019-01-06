@@ -24,9 +24,7 @@
         </div>
       </div>
 
-      <div class="container">
-        <div v-html="$page.post.content"/>
-      </div>
+      <JournalContent :content="$page.post.content" />
 
     </div>
   </Layout>
@@ -45,7 +43,12 @@ query JournalPost ($path: String!) {
 </page-query>
 
 <script>
+import JournalContent from "@/components/JournalContent"
+
 export default {
+  components: {
+    JournalContent
+  },
   metaInfo () {
     return {
       title: this.$page.post.title
