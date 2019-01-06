@@ -1,10 +1,10 @@
 ---
-date: 2019-01-03T23:00:00+00:00
+date: 2019-01-03 23:00:00 +0000
 title: Gridsome with Forestry CMS starter-kit
-author: data/authors/nichlas-w-andersen.json
+author: Nichlas W. Andersen
 excerpt: Get up and running with a fresh macOS Mojave install
----
 
+---
 #### There are so many Static Site Generators. Why another one?
 
 We think **Gridsome** is a missing piece to the Vue.js ecosystem. What Gatsby.js does for React.js is a game changer in how we build websites.  React.js is excellent, but we think Vue.js is more approachable for most web designers and devs getting started with JAMstack. Gridsome is the Vue.js alternative to Gatsby.
