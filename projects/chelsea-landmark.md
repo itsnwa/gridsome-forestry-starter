@@ -1,9 +1,9 @@
 ---
 date: 2019-01-03 23:00:00 +0000
 year: 2019
-title: Chelsea Landmark
+title: Banana
 category: Identity
-thumbnail: "../static/uploads/chelsealandmark_entrance-signs_05-small.jpg"
+thumbnail: "../static/uploads/mike-dorner-173502-unsplash.jpg"
 categories:
 - identity
 - print
@@ -12,6 +12,4 @@ project_bg_color: ''
 project_fg_color: ''
 
 ---
-What do you guys think about this implementation of Gridsome and Forestry CMS?
-
-![](/static/uploads/chelsealandmark-logo.png)![](/static/uploads/cl-floorplan-1.jpg)
+The **banana** fruits grow from a **banana** blossom in hanging clusters, also called a bunch or **banana** stem. The fruits grow in rows called tiers or hands. There can be as many as twenty fruits to a hand, and as many as twenty tiers in a bunch. A bunch usually weighs between 30 and 50 kilograms (65 to 110 pounds).
