@@ -6,7 +6,7 @@
         <div class="latest-journals">
         <div class="container">
             <g-link :to="item.node.path" class="journal" v-for="item in journals" :key="item.node.id">
-            <h3 class="journal-title">{{ item.node.title }}</h3>
+              <h3 class="journal-title">{{ item.node.title }}</h3>
             </g-link>
         </div>
         </div>
@@ -40,7 +40,6 @@ export default {
 .latest-journals > .container {
   display: flex;
   flex-wrap: wrap;
-  padding: 0;
 }
 .journal {
   flex: 0 0 100%;
@@ -57,6 +56,11 @@ export default {
 
 .journal:hover {
   background: var(--color-base-1);
+}
+
+.journal-title {
+  font-size: 1rem;
+  line-height: 1.35;
 }
 
 @media (min-width: 580px) {
@@ -102,9 +106,6 @@ export default {
     border-right: 0;
     border-top: 1px solid var(--color-base-1);
     border-bottom: 1px solid var(--color-base-1);
-  }
-  .latest-journals > .container {
-    padding: 0 2rem;
   }
 }
 

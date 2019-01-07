@@ -1,9 +1,9 @@
 <template>
   <Layout>
     <div class="journal">
+      <div class="container journal-container">
 
-      <div class="journal-header">
-        <div class="container">
+        <div class="journal-header">
           <h1 v-html="$page.post.title" class="journal-title" />
           <div class="journal-meta">
             <div class="journal-author">
@@ -20,10 +20,10 @@
             </div>
           </div>          
         </div>
+
+        <JournalContent :content="$page.post.content" />
+
       </div>
-
-      <JournalContent :content="$page.post.content" />
-
     </div>
   </Layout>
 </template>
@@ -56,6 +56,9 @@ export default {
 </script>
 
 <style scoped>
+.journal-container {
+  max-width: 840px;
+}
 .journal-header {
   padding: 2rem 0 4rem 0;
 }

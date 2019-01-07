@@ -63,7 +63,7 @@ export default {
 
 <style scoped>
 .project-header {
-  padding: 20vh 0 8rem 0;
+  padding: 20vh 0 4rem 0;
 }
 .project-title {
   font-size: 4rem;

@@ -45,6 +45,10 @@ body.dark {
   --color-contrast-1: rgb(243, 243, 243);
 }
 
+h1 {
+  letter-spacing: -0.01em;
+}
+
 .layout {
   padding: 0;
 }
