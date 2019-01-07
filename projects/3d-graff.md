@@ -1,11 +1,10 @@
 ---
-thumbnail: "../static/uploads/graff.jpg"
-title: 3D Graff
+thumbnail: "../static/uploads/ian-dooley-281897-unsplash.jpg"
+title: Ice Cream
 date: 2019-01-04 23:00:00 +0000
 categories:
-- Illustration
-project_bg_color: "#B4C1C4"
-project_fg_color: "#fff"
+- photography
+project_bg_color: 
+project_fg_color: "#FDC70D"
 
 ---
-![](/static/uploads/graff.jpg)
