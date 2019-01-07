@@ -29,3 +29,4 @@ file_template: ":filename:"
 build:
   publish_command: gridsome build
   output_directory: dist
+  preview_command: gridsome build
