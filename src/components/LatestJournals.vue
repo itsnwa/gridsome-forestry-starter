@@ -1,7 +1,7 @@
 <template>
     <div>
         <div class="latest-journals-heading container">
-        <h3>Latest and greatest</h3>
+        <span class="label">Latest and greatest</span>
         </div>
         <div class="latest-journals">
         <div class="container">
