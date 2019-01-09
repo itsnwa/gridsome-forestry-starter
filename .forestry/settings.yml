@@ -27,5 +27,6 @@ front_matter_path: "../static/uploads"
 use_front_matter_path: true
 file_template: ":filename:"
 build:
+  preview_command: gridsome build
   publish_command: gridsome build
   output_directory: dist
