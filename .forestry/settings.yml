@@ -10,21 +10,21 @@ sections:
   create: documents
   match: "**/*.md"
   templates:
-  - project
+    - project
 - type: directory
   path: journal
   label: Journal
   create: documents
   match: "**/*.md"
   templates:
-  - journal
+    - journal
 - type: document
   path: data/theme.json
   label: Theme config
-upload_dir: static/uploads
-public_path: "/static/uploads"
-front_matter_path: "../static/uploads"
-use_front_matter_path: true
+upload_dir: uploads
+public_path: "/uploads"
+front_matter_path: ""
+use_front_matter_path: false
 file_template: ":filename:"
 build:
   preview_command: gridsome build
