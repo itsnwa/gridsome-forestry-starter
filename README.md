@@ -8,7 +8,7 @@
 ## Development
 
 ```bash
-# install Gridsome locally
+# install Gridsome globally
 npm install --global @gridsome/cli
 
 # cd into the project directory
