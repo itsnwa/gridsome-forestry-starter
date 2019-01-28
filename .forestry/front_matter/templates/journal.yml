@@ -19,6 +19,8 @@ fields:
   label: Date
   config:
     required: true
+    display_utc: false
+    date_format: LL
 - type: select
   name: author
   config:
@@ -30,6 +32,6 @@ fields:
     options:
     - Nichlas W. Andersen
   label: Author
-  default: ''
+  default: Nichlas W. Andersen
 pages:
 - journal/macos-development-environment.md
