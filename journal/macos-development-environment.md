@@ -1,5 +1,5 @@
 ---
-date: 20, January 0000
+date: 05/16/2019
 title: macOS development environment
 author: Nichlas W. Andersen
 excerpt: Get up and running with a fresh macOS Mojave install
@@ -9,4 +9,4 @@ excerpt: Get up and running with a fresh macOS Mojave install
 
     $ brew brew brew
 
-Enjoy your new system! 🎉🏁
+Enjoy your new system! 🎉
