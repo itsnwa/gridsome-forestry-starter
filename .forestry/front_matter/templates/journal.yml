@@ -18,10 +18,11 @@ fields:
   label: Date
   config:
     required: true
-    display_utc: false
-    date_format: D, MMMM YYYY
+    display_utc: true
+    date_format: D. MMMM YYYY
     time_format: ''
-    export_format: D, MMMM YYYY
+    export_format: MM/DD/YYYY
+  default: now
 - type: select
   name: author
   config:
