@@ -16,6 +16,9 @@ fields:
   label: Date
   config:
     required: true
+    date_format: YYYY
+    time_format: ''
+    export_format: YYYY
 - type: tag_list
   name: categories
   label: Categories
