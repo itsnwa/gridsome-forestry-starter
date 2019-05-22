@@ -1,5 +1,5 @@
 ---
-date: 2019-01-03 23:00:00 +0000
+date: 2018
 year: 2019
 title: Banana
 category: Identity
