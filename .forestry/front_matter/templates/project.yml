@@ -19,6 +19,9 @@ fields:
     date_format: YYYY
     time_format: ''
     export_format: YYYY
+    display_utc: true
+  default: now
+  hidden: true
 - type: tag_list
   name: categories
   label: Categories
