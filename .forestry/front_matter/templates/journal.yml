@@ -20,7 +20,7 @@ fields:
     required: true
     display_utc: false
     date_format: D, MMMM YYYY
-    time_format: D, MMMM YYYY
+    time_format: ''
     export_format: D, MMMM YYYY
 - type: select
   name: author
