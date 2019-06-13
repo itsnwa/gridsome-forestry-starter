@@ -2,7 +2,7 @@
 // Learn more: https://gridsome.org/docs/config
 
 module.exports = {
-  siteName: "Nichlas W. Andersen",
+  siteName: "NWA",
   siteUrl: `https://www.itsnwa.com`,
   titleTemplate: "%s - NWA",
   siteDescription: "Creative technologist",
