@@ -16,9 +16,9 @@ fields:
   label: Date
   config:
     required: true
-    date_format: YYYY
+    date_format: YYYY-MM-DD
     time_format: ''
-    export_format: YYYY
+    export_format: YYYY-MM-DD
     display_utc: true
   default: now
   hidden: true

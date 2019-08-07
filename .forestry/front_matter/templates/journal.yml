@@ -19,9 +19,9 @@ fields:
   config:
     required: true
     display_utc: true
-    date_format: D. MMMM YYYY
+    date_format: YYYY-MM-DD
     time_format: ''
-    export_format: MM/DD/YYYY
+    export_format: YYYY-MM-DD
   default: now
 - type: select
   name: author
