@@ -1,7 +1,7 @@
 ---
 thumbnail: "/uploads/cody-davis-253925-unsplash.jpg"
 title: Pineapple
-date: 2019-01-03T23:00:00.000+00:00
+date: 2019-02-06
 categories:
 - photography
 - blue

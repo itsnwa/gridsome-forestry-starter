@@ -42,8 +42,8 @@ query ProjectPost ($path: String!) {
     date (format: "YYYY")
     content
     categories
-    projectBgColor
-    projectFgColor
+    project_bg_color
+    project_fg_color
   }
 }
 </page-query>
@@ -54,7 +54,7 @@ export default {
     return {
       title: this.$page.post.title,
       bodyAttrs: {
-        style: `background-color: ${this.$page.post.projectBgColor ? this.$page.post.projectBgColor : 'var(--color-base)'}; color: ${this.$page.post.projectFgColor ? this.$page.post.projectFgColor : 'var(--color-contrast)'}`
+        style: `background-color: ${this.$page.post.project_bg_color ? this.$page.post.project_bg_color : 'var(--color-base)'}; color: ${this.$page.post.project_fg_color ? this.$page.post.project_fg_color : 'var(--color-contrast)'}`
       }
     }
   }

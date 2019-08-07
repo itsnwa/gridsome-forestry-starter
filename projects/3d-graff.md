@@ -1,7 +1,7 @@
 ---
 thumbnail: "/uploads/ian-dooley-281897-unsplash.jpg"
 title: Ice Cream
-date: 2019-01-04T23:00:00.000+00:00
+date: 2019-01-04
 categories:
 - photography
 - yellow
