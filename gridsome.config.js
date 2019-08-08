@@ -4,6 +4,7 @@
 module.exports = {
   siteName: "Portfolio",
   siteUrl: `https://www.itsnwa.com`,
+  host: "0.0.0.0",
   titleTemplate: "%s - NWA",
   siteDescription: "Creative technologist",
   plugins: [
