@@ -34,5 +34,5 @@ build:
   output_directory: dist
   instant_preview_command: gridsome develop
   install_dependencies_command: npm install
-  preview_docker_image: node:10
-  mount_path: "/srv"
+  preview_docker_image: public
+  mount_path: public
