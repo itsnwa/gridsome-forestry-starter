@@ -33,3 +33,6 @@ build:
   preview_output_directory: dist
   output_directory: dist
   instant_preview_command: gridsome develop
+  preview_docker_image: node:10
+  mount_path: "/srv"
+  working_dir: "/srv"
