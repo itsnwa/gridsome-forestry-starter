@@ -32,7 +32,7 @@ build:
   publish_command: gridsome build
   preview_output_directory: dist
   output_directory: dist
-  instant_preview_command: gridsome develop
+  instant_preview_command: npm run develop
   install_dependencies_command: npm install
   preview_docker_image: node:10
   mount_path: "/srv"
