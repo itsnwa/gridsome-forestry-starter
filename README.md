@@ -18,6 +18,9 @@ npm install --global @gridsome/cli
 # cd into the project directory
 cd gridsome-forestry-starter
 
+# install dependencies
+npm install
+
 # Start local dev server
 gridsome develop
 ```
