@@ -26,12 +26,8 @@ public_path: "/uploads"
 front_matter_path: ''
 use_front_matter_path: false
 file_template: ":filename:"
-instant_preview: true
 build:
-  preview_command: gridsome build
-  publish_command: gridsome build
   preview_output_directory: dist
-  output_directory: dist
   install_dependencies_command: npm install
   preview_docker_image: forestryio/node:12
   mount_path: "/srv"
